@@ -1,0 +1,70 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* RESET */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: var(--light-gray);
+  font-family: "Outfit", sans-serif;
+}
+
+/* CARD */
+
+.card {
+  max-width: 300px;
+  width: 100%;
+  background-color: var(--white);
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.card .card-qr img {
+  border-radius: 8px;
+}
+
+.card .card-content {
+  margin-top: 16px;
+  padding: 0px 4px 24px 4px;
+  text-align: center;
+}
+
+.card .card-content .title {
+  color: var(--dark-blue);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.card .card-content .description {
+  color: var(--grayish-blue);
+}
